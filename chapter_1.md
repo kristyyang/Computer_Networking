@@ -89,3 +89,60 @@ Two type of broadband residential access are **digital subscriber line(DSL) and 
 - Between source and destinaion, each **packet** travels through **communication links and packet switches.**
 
 #### Store-and-Forward Transmission
+
+Most packet switches use **store-and-forward transmission** at the inputs to the links.
+
+```text
+Store-and-forword transmission
+
+packet switch must receive the entire packet before it can begin to transmit the first bit of packet onto outbound link.
+```
+
+#### Queuing delays and packet loss
+
+- Each packet switch has multiple links attached to it.
+
+1. For each attached link, the packet switch has an output buffer, which stores packets that the router is about send into that link.
+
+2. Packets suffer output buffer  **queuing delays**
+3. Buffer space is finite, an arriving packet need to wait and  **packet loss** will occur.
+
+#### Forwarding Tables and Routing Protocols
+
+- Each internet has IP
+- Each router has forwarding table that maps destination addresses, routers directs the packet to this outbound link.
+- Internet has a number of special routing protocols that are used to automatically set the forwarding tables.
+
+### 1.3.2 Circuit Switching
+
+Two fundamental approaches to moving data through newwork of linkand switches.
+**Circuit switching** and **packet switching**
+
+- The resources needed **along a path** to provide for **communication bewteen the end systems.** that are reserved for duration of the communication session between the end systems.
+
+- Hosts wanna communication, the network establishes a **dedicated end-to-end connection between the two hosts.**
+
+#### Multiplexing in Circuit-Switched Networks
+
+A circuit in a link is either **frequency-division multiplexing(FDM)** or **time-division multiplexing(TDM)**
+
+- With FDM, the frequency spectrum of a link is divided up among the connections established across the link.
+
+- With TDM link, time is divided into frames of fixed duration, and each freame is divided into a fixed number of time slots.
+   * when network establishes a connection across a link, the network dedicates one time slot inevery frame to this connection.
+
+- Proponents of **packet switching** have always argued that **circuit switching** is **wasteful** because the dedicated circuits are idle during  **silent periods**
+
+#### Packet Switching Versus Circuit Switching
+
+**Packet switching** more efficient
+
+### 1.3.3 A network of networks
+
+- we saw earlier that end systems connect into the Internet via an access ISP. The access
+
+- ISP can provide either wired or wireless connectivity, using an array of access technologies including DSL cable, FTTH,Wi-Fi
+
+- Our first network structure, *Network Structure 1*, interconnects all of the access ISPs with a single global transit ISP.
+
+- Our second network Structure 2, two-tier hierarchy with global transit providers residing at the top tier and access ISPs at the bottom tier.
