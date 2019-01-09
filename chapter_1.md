@@ -146,3 +146,42 @@ A circuit in a link is either **frequency-division multiplexing(FDM)** or **time
 - Our first network structure, *Network Structure 1*, interconnects all of the access ISPs with a single global transit ISP.
 
 - Our second network Structure 2, two-tier hierarchy with global transit providers residing at the top tier and access ISPs at the bottom tier.
+
+
+## 1.5 Protocol Layers and Their Service Models
+
+Each layer provides its service by
+- performing certain action within that layer
+- using the services of the layer directly below it
+
+Reason to use it
+
+```text
+For large and complex systems that are constantly being updated, the ability to change the implementation of a service without affecting other commponents of the system is another important advantage of layering
+```
+
+### protocol Layering
+
+services that a layer offers to the layer above, **service model** of a layer
+
+- Protocol layering has comceptual and structural advantages.
+- Provide structured way to discuss system components, easier to update system components.
+
+Internet protocol stack consiste of 5 layers, take top-down approach.
+
+### application layer
+Refer to this packet of information at the applocation layer as a message
+
+### Transport layer
+Refer to a transport-layer packet as a segment. Gurantee delivey message to destination
+
+### Network layer
+
+Moving network-layer packets known as datagrams from one host to another.
+
+### Link layer
+A series of routers between the source and destination.
+Refer link layer packets as frames
+
+### Physical Layer
+move individual bits within the frame from one node to the next.
