@@ -1,6 +1,6 @@
 # Computer Networks and the Internet
 
-## What is the internet ?
+## 1.1 What is the internet ?
 
 -  First, we can describe the nuts and bolts of the internet, the basic hardware and software components that make up the internet.
 
@@ -52,3 +52,40 @@
 ```text
 specifies the format of the packets that are sent and received among routers and end systems.
 ```
+
+### 1.1.2 A services Description
+
+### 1.1.3 What is Protocol?
+
+#### Network protocols
+
+- All activity in the Internet that involves two or more communicating remote entities is governed by a protocal.
+
+- Different protocols are used to accomplish different communication tasks.
+
+```text
+A Protocol defines the format and the order of messages exchanged between two or more communicating entities, as well as the actions taken on the transimission and/or receipt of a message or other event.
+```
+
+## 1.2 The Network Edge
+
+Hosts and end systems interchangeably; *host = end system*.
+
+- Hosts are sometimes further divided into two categories: **clients** and **servers**
+   - clients eg: mobile PCs, smartphones, and so on.
+   - servers eg: email, web pages, and video in large data centers.
+
+### 1.2.1 Access Networks
+
+Two type of broadband residential access are **digital subscriber line(DSL) and cable.**
+
+## 1.3 Network core
+
+### 1.3.1 Packet Switching
+
+- End systems exchange messages with each other.
+- To send a message from a source end system to destination end system. Long message need to into smaller chunks of data as **Packets**
+
+- Between source and destinaion, each **packet** travels through **communication links and packet switches.**
+
+#### Store-and-Forward Transmission
